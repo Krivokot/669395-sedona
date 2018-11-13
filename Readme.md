@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Кривокотченко](https://up.htmlacademy.ru/htmlcss/23/user/669395).
-* Наставник: [Артём Рудов]
-(https://htmlacademy.ru/profile/artrudov).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
