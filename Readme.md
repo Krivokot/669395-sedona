@@ -2,7 +2,7 @@
 
 * Студент: [Илья Кривокотченко](https://up.htmlacademy.ru/htmlcss/23/user/669395).
 * Наставник: [Артём Рудов]
-https://htmlacademy.ru/profile/artrudov.
+(https://htmlacademy.ru/profile/artrudov).
 
 ---
 
