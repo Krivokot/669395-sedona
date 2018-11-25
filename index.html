@@ -12,7 +12,7 @@
                 <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
             </ul>
             <a class="main-header-logo">
-                <img src="img/logo-sedona.svg" alt="Логотип" width="150" height="100">
+                <img src="img/logo-sedona.svg" alt="Логотип Седона" width="150" height="100">
             </a>
             <ul class="main-navigation-list-right">
                 <li class="main-navigation-item"><a href="state.html">Карта штата</a></li>
@@ -20,10 +20,11 @@
             </ul>
           </nav>
           <div class="main-intro">
-              <img src="img/intro-welcome.png" alt="Интро" width="150" height="100">
+              <img src="img/intro-welcome.png" alt="Интро: Welcome to the gorgeus Sedona Because the Grand Canyon sucks!"  width="150" height="100">
           </div>
       </header>
       <main class="main-content">
+          <!-- Здесь будет список с преимуществами -->
           <p class="main-label">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <section class="main-search">
             <h1 class="visually-hidden">Город Седона</h1>
@@ -33,12 +34,24 @@
           </section>
           <section class="modal-search-hotels">
               <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-<!--              Здесь будет форма с поиском отелей-->
-              <span class="date-in">Дата заезда</span>
+              <!--Здесь будет форма с поиском отелей-->
+              <form class="search-hotels-form">
+                  <label for="date-in">Дата заезда:</label>
+                  <input type="date" name="date-in" id="date-in" placeholder="24 апреля 2017">
+                  <label for="date-out">Дата выезда:</label>
+                  <input type="date" name="date-out" id="date-out" placeholder="4 июля 2017">
+                  <label for="peoples">Взрослые:</label>
+                  <input type="number" name="peoples" id="peoples" min="1" max="10" step="1" placeholder="2">
+                  <label for="childrens">Дети:</label>
+                  <input type="number" name="childrens" id="childrens" min="1" max="10" step="1" placeholder="0">
+                  <label for="search">Найти</label>
+                  <input type="submit" name="search" id="search">
+              </form>
+              <!-- <span class="date-in">Дата заезда</span>
               <span class="date-out">Дата выезда</span>
               <span class="peoples">Взрослые</span>
               <span class="childrens">Дети</span>
-              <span class="button btn-find">Найти</span>
+              <span class="button btn-find">Найти</span> -->
           </section>
           <section class="main-map">
               <h2 class="visually-hidden">Карта</h2>
@@ -56,7 +69,7 @@
         </div>
         <a class="producer" href="https://htmlacademy.ru/intensive/htmlcss">
             <p>Website by</p>
-            <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="150" height="50">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="150" height="50">
         </a>
       </footer>
   </body>
