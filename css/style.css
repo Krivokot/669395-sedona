@@ -1,9 +1,11 @@
-Папка для стилевых файлов.
+body {
+  margin: 0;
+  padding: 0;
 
---
-
-Пример структуры файлов:
-
-css/
-| - style.css
-| - [другие *.css файлы]
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
