@@ -334,8 +334,11 @@ a {
 
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     z-index: 2;
+}
+
+.main-header-navigation ul {
+    flex-wrap: wrap;
 }
 
 .main-navigation-list-left {
@@ -345,13 +348,14 @@ a {
 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .main-header-logo {
     margin-bottom: -25px;
     padding: 0px;
+
+    align-self: stretch;
 }
 
 .main-navigation-list-right {
