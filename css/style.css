@@ -335,18 +335,6 @@ a {
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-up {
-    background-image: url(../img/icon-up-dir.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.sorting-down {
-    background-image: url(../img/icon-down-dir.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .main-catalog {
     background-color: #ffffff;
 }
@@ -716,6 +704,8 @@ a {
 
 .main-catalog-sorting {
     width: 1200px;
+    padding: 0px;
+    margin: 0px;
 
     display: flex;
 }
@@ -739,10 +729,18 @@ a {
 
 .main-catalog-sorting li {
     margin: 0px 32px 0px 32px;
+    padding: 0px;
+}
+
+.sorting-btn {
+    margin: 41px 0px;
+    padding: 0px;
 }
 
 .main-catalog {
     width: 1200px;
+    padding: 0px;
+    margin: 0px;
 
     display: flex;
     flex-direction: column;
@@ -762,10 +760,7 @@ a {
     display: flex;
     flex-direction: row;
 
-    margin-top: 31px;
-    margin-left: 72px;
-    margin-right: 72px;
-    padding: 0px;
+    padding: 30px 72px 30px 72px;
 }
 
 .hotel-name-columns {
