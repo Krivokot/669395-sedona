@@ -32,7 +32,6 @@ a {
 .main-header-navigation {
     font-size: 14px;
     line-height: 26px;
-    color: #000000;
 
     background-color: #ffffff;
 }
@@ -40,11 +39,6 @@ a {
 .main-navigation-list-left,
 .main-navigation-list-right {
     list-style: none;
-}
-
-.main-navigation-list-left a,
-.main-navigation-list-right a {
-    color: #000000;
 }
 
 .main-navigation-list-left a:hover,
@@ -57,6 +51,14 @@ a {
 .main-navigation-list-left a:active,
 .main-navigation-list-right a:active {
     color: #b2b2b2;
+}
+
+.main-navigation-item a {
+    color: #000000;
+}
+
+.main-navigation-item-current a {
+    color: #9b8d84;
 }
 
 .main-intro {
@@ -331,6 +333,18 @@ a {
 .main-catalog-sorting a {
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-up {
+    background-image: url(../img/icon-up-dir.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sorting-down {
+    background-image: url(../img/icon-down-dir.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-catalog {
@@ -707,27 +721,24 @@ a {
 }
 
 .main-catalog-sorting p {
-    padding: 30px 72px;
+    margin: 38px 72px;
+    padding: 0px;
 }
 
 .main-catalog-sorting h3 {
-    padding: 45px 0px;
+    margin: 45px 0px;
+    padding: 0px;
 
 }
 
 .main-catalog-sorting ul {
-    padding: 45px 0px;
+    margin: 45px 0px;
+    padding: 0px;
     display: flex;
 }
 
 .main-catalog-sorting li {
     margin: 0px 32px 0px 32px;
-}
-
-.sorting-btn button {
-    width: 12px;
-    padding: 0px;
-    margin: 0px;
 }
 
 .main-catalog {
