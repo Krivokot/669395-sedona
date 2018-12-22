@@ -554,6 +554,10 @@ a {
     padding: 0px;
 }
 
+.main-map-frame {
+    border: none;
+}
+
 /* Стилизация страницы кталога */
 
 .main-filters {
