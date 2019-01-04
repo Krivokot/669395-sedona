@@ -501,9 +501,10 @@ a {
   line-height: 26px;
   text-align: center;
   background-color: #ffffff;
-  margin-bottom: -472px;
-  padding: 54px 56px;
-  display: none;
+  margin: 0px;
+  margin-bottom: -395px;
+  padding: 41px 11px;
+  /* display: none; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -530,8 +531,10 @@ a {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
-  padding-top: 19px;
-  margin: 0px;
+}
+
+.search-hotels-form input[type="text"]::placeholder {
+    color: #000000;
 }
 
 .search-hotels-form input[type="text"]:hover {
@@ -543,14 +546,101 @@ a {
   border: 2px solid #e5e5e5;
 }
 
-.calendar {
-    margin: 0px;
+.date-in label,
+.date-out label {
+    margin-left: 43px;
+    padding: 0px;
+}
+
+.date-in input[type="text"],
+.date-out input[type="text"] {
+    width: 330px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+    margin-left: 20px;
+    margin-bottom: 28px;
+}
+
+.date-out button {
+  padding: 19px;
+  margin: 0px;
+  background-image: url(../img/calendar.svg);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: -42px;
+  bottom: 4px;
+}
+
+.date-in button {
+  padding: 19px;
+  margin: 0px;
+  background-image: url(../img/calendar.svg);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: -41px;
+  bottom: 4px;
+}
+
+.peoples,
+.childrens {
+    display: inline-block;
+    vertical-align: center;
+    margin-top: 5px;
+}
+
+.peoples label,
+.childrens label {
+  margin-right: 26px;
+}
+
+.childrens label {
+  margin-left: 62px;
 }
 
 .peoples input[type="text"],
 .childrens input[type="text"] {
-  font-weight: 700;
-  text-align: center;
+    width: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    margin: 0px;
+}
+
+.btn-plus {
+  padding: 18px;
+  margin: 0px;
+  background-image: url(../img/plus.png);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: -4px;
+  bottom: 4px;
+}
+
+.btn-minus {
+  padding: 18px;
+  margin: 0px;
+  background-image: url(../img/minus.png);
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 4px;
+  bottom: 4px;
 }
 
 .search-button input[type="submit"] {
@@ -561,9 +651,7 @@ a {
   background-color: #81b3d2;
   border: none;
   padding: 17px 196px;
-  /* padding-top: 15px;
-    padding-bottom: 15px; */
-  margin-top: 27px;
+  margin-top: 50px;
   margin-bottom: 28px;
 }
 
@@ -574,65 +662,6 @@ a {
 
 .search-button input[type="submit"]:active {
   background-color: #5496bd;
-}
-
-.date-out button {
-  padding: 20px;
-  margin: 0px;
-  background-image: url(../img/calendar.svg);
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.date-in button {
-  padding: 20px;
-  margin: 0px;
-  background-image: url(../img/calendar.svg);
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.btn-plus {
-  padding: 20px;
-  margin: 0px;
-  background-image: url(../img/plus.png);
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.btn-minus {
-  padding: 20px;
-  margin: 0px;
-  background-image: url(../img/minus.png);
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.peoples,
-.childrens {
-  display: inline-block;
-}
-
-.peoples label,
-.childrens label {
-  padding-right: 20px;
-}
-
-.childrens label {
-  padding-left: 40px;
-}
-
-.peoples input[type="text"],
-.childrens input[type="text"] {
-  width: 38px;
 }
 
 .main-map {

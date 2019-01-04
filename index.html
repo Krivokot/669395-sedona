@@ -106,21 +106,21 @@
     <section class="modal-search-hotels">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form class="search-hotels-form" method="post">
-        <p class="search-hotels-form date-in">
+        <div class="search-hotels-form date-in">
           <label for="date-in">Дата заезда:</label>
           <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
           <button class="button btn-date-in calendar">
             <span class="visually-hidden">Календарь</span>
           </button>
-        </p>
-        <p class="search-hotels-form date-out">
+      </div>
+        <div class="search-hotels-form date-out">
           <label for="date-out">Дата выезда:</label>
           <input type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
           <button class="button btn-date-out calendar">
             <span class="visually-hidden">Календарь</span>
           </button>
-        </p>
-        <p class="search-hotels-form peoples">
+      </div>
+        <div class="search-hotels-form peoples">
           <label for="peoples">Взрослые:</label>
           <button class="button btn-peoples btn-minus">
             <span class="visually-hidden">Уменьшить количество взрослых людей</span>
@@ -129,8 +129,8 @@
           <button class="button btn-peoples btn-plus">
             <span class="visually-hidden">Увеличить количество взрослых людей</span>
           </button>
-        </p>
-        <p class="search-hotels-form childrens">
+      </div>
+        <div class="search-hotels-form childrens">
           <label for="childrens">Дети:</label>
           <button class="button btn-childres btn-minus">
             <span class="visually-hidden">Уменьшить количество детей</span>
@@ -139,10 +139,10 @@
           <button class="button btn-childres btn-plus">
             <span class="visually-hidden">Увеличить количество детей</span>
           </button>
-        </p>
-        <p class="button search-hotels-form search-button">
+      </div>
+        <div class="button search-hotels-form search-button">
           <input type="submit" name="search" id="search" value="Найти">
-        </p>
+      </div>
       </form>
     </section>
     <section class="main-map">
@@ -183,8 +183,10 @@
       </a>
     </div>
   </footer>
+
   <script src="js/script.js">
   </script>
+
 </body>
 
 </html>
