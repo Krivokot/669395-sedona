@@ -502,8 +502,9 @@ a {
   text-align: center;
   background-color: #ffffff;
   margin: 0px;
-  margin-bottom: -395px;
+  margin-bottom: -394px;
   padding: 41px 11px;
+  box-shadow: 0px 4px 15px 3px rgba(0,0,0,0.15);
   /* display: none; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -531,6 +532,7 @@ a {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+  margin-bottom: 28px;
 }
 
 .search-hotels-form input[type="text"]::placeholder {
@@ -546,10 +548,19 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.date-in {
+    margin-top: 15px;
+}
+
+.date-out {
+    margin-left: 2px;
+}
+
 .date-in label,
 .date-out label {
     margin-left: 43px;
     padding: 0px;
+    cursor: pointer;
 }
 
 .date-in input[type="text"],
@@ -559,7 +570,6 @@ a {
     padding-bottom: 11px;
     padding-left: 14px;
     margin-left: 20px;
-    margin-bottom: 28px;
 }
 
 .date-out button {
@@ -594,25 +604,30 @@ a {
 .childrens {
     display: inline-block;
     vertical-align: center;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
-.peoples label,
-.childrens label {
-  margin-right: 26px;
+.peoples label {
+  margin-right: 36px;
+  margin-left: 5px;
+  padding: 0px;
+  cursor: pointer;
 }
 
 .childrens label {
-  margin-left: 62px;
+  margin-left: 40px;
+  margin-right: 25px;
+  padding: 0px;
+  cursor: pointer;
 }
 
 .peoples input[type="text"],
 .childrens input[type="text"] {
-    width: 20px;
+    width: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 14px;
-    margin: 0px;
+    text-align: center;
+    margin-bottom: 19px;
 }
 
 .btn-plus {
@@ -651,8 +666,8 @@ a {
   background-color: #81b3d2;
   border: none;
   padding: 17px 196px;
-  margin-top: 50px;
-  margin-bottom: 28px;
+  margin-top: 37px;
+  margin-bottom: 13px;
 }
 
 .search-button input[type="submit"]:hover,
@@ -1138,6 +1153,7 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
+  margin-left: 24px;
   padding: 37px 0px 37px 0px;
 }
 
@@ -1170,7 +1186,8 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  margin-right: 98px;
+  margin-right: 101px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1184,6 +1201,6 @@ a {
 }
 
 .producer p {
-    margin-right: 6px;
-    margin-top: 12px;
+    margin-right: 9px;
+    margin-top: 8px;
 }
