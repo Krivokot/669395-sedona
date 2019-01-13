@@ -12,9 +12,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
-  margin: 0px;
-  padding: 0px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 a {
@@ -507,7 +512,7 @@ a {
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -516,7 +521,7 @@ a {
   70%,
   90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   20%,
@@ -524,7 +529,7 @@ a {
   60%,
   80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -533,7 +538,7 @@ a {
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -542,7 +547,7 @@ a {
   70%,
   90% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
 
   20%,
@@ -550,7 +555,7 @@ a {
   60%,
   80% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -559,8 +564,7 @@ a {
   line-height: 26px;
   text-align: center;
   background-color: #ffffff;
-  margin: 0px;
-  margin-bottom: -405px;
+  margin-bottom: -406px;
   padding: 41px 11px;
   -webkit-box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.15);
@@ -583,11 +587,12 @@ a {
   display: flex;
   -webkit-animation: smooth-appearance 0.3s;
   animation: smooth-appearance 0.3s;
+  margin-bottom: -407px;
 }
 
 .modal-error {
   -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .search-hotels-form input[type="text"] {
@@ -648,13 +653,13 @@ a {
 }
 
 .calendar {
-  padding: 6px;
+  padding: 7px;
   margin: 0px;
-  background-color: #f2f2f2;
+  background: none;
   border: none;
   cursor: pointer;
   position: relative;
-  left: -37px;
+  left: -40px;
   bottom: -5px;
 }
 
@@ -694,8 +699,8 @@ a {
 .peoples input[type="text"],
 .childrens input[type="text"] {
   width: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   text-align: center;
   margin-bottom: 19px;
 }
@@ -814,6 +819,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   margin-top: 30px;
   margin-left: -7px;
 }
@@ -822,6 +828,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   margin-top: 30px;
   margin-left: -296px;
 }
@@ -1119,7 +1126,7 @@ a {
 .main-catalog-item h3 {
   font-size: 21px;
   line-height: 26px;
-  margin-top: 1px;
+  margin-top: -4px;
   margin-left: 1px;
 }
 
@@ -1132,11 +1139,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 25px 72px 26px 72px;
-}
-
-.hotel-photo img {
-
+  padding: 30px 72px 21px 72px;
 }
 
 .hotel-name-columns {
@@ -1212,7 +1215,7 @@ a {
 }
 
 .hotel-rating-columns {
-  margin-left: 379px;
+  margin-left: 361px;
   padding: 0px;
 }
 
@@ -1221,8 +1224,10 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #666666;
-  padding: 4px 14px;
-  margin-top: 36px;
+  padding: 3px 17px;
+  width: 83px;
+  margin-top: 38px;
+  margin-left: 17px;
   background-color: #f2f2f2
 }
 
@@ -1237,8 +1242,8 @@ a {
 }
 
 .hotel-stars li {
-  margin-right: 3px;
-  margin-top: 4px;
+  margin-right: 6px;
+  margin-top: -1px;
 }
 
 /* Подвал */
@@ -1278,7 +1283,8 @@ a {
 }
 
 .footer-border {
-    border-top: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  margin-top: 9px;
 }
 
 .hash-tag {
@@ -1302,12 +1308,12 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   margin-left: 24px;
-  padding: 37px 0px 37px 0px;
+  padding: 36px 0px 34px 0px;
 }
 
 .social-button {
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 48px;
   background-color: #81b3d2;
   display: -webkit-box;
   display: -ms-flexbox;
