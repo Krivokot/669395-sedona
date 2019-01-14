@@ -6,7 +6,16 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <noscript>
+    <style type="text/css">
+      .modal-search-hotels {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
@@ -102,66 +111,66 @@
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="searching-hotels.html" class="button btn-search-modal">Поиск гостиницы в Седоне</a>
-    <div class="modal-search-hotels">
-      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <form class="search-hotels-form" method="post">
-        <div class="search-hotels-form date-in">
-          <label for="date-in">Дата заезда:</label>
-          <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
-          <button class="button btn-date-in calendar">
-            <span class="visually-hidden">Календарь</span>
-            <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-              <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-              <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" /></svg>
-          </button>
-        </div>
-        <div class="search-hotels-form date-out">
-          <label for="date-out">Дата выезда:</label>
-          <input type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
-          <button class="button btn-date-out calendar">
-            <span class="visually-hidden">Календарь</span>
-            <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
-              <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-              <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" /></svg>
-          </button>
-        </div>
-        <div class="search-hotels-form peoples">
-          <label for="peoples">Взрослые:</label>
-          <button class="button btn-peoples btn-minus">
-            <span class="visually-hidden">Уменьшить количество взрослых людей</span>
-            <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="7px">
-              <path d="M4 1 h10v3h-10z" />
-            </svg>
-          </button>
-          <input type="text" name="peoples" id="peoples" placeholder="2">
-          <button class="button btn-peoples btn-plus">
-            <span class="visually-hidden">Увеличить количество взрослых людей</span>
-            <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px">
-              <path d="M4 1 h3 v3 h3 v3 h-3 v3 h-3 v-3 h-3 v-3 h3 z" />
-            </svg>
-          </button>
-        </div>
-        <div class="search-hotels-form childrens">
-          <label for="childrens">Дети:</label>
-          <button class="button btn-childres btn-minus">
-            <span class="visually-hidden">Уменьшить количество детей</span>
-            <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="7px">
-              <path d="M4 1 h10v3h-10z" />
-            </svg>
-          </button>
-          <input type="text" name="childrens" id="childrens" placeholder="0">
-          <button class="button btn-childres btn-plus">
-            <span class="visually-hidden">Увеличить количество детей</span>
-            <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px">
-              <path d="M4 1 h3 v3 h3 v3 h-3 v3 h-3 v-3 h-3 v-3 h3 z" />
-            </svg>
-          </button>
-        </div>
-        <div class="button search-hotels-form search-button">
-          <input type="submit" name="search" id="search" value="Найти">
-        </div>
-      </form>
-  </div>
+      <div class="modal-search-hotels">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <form class="search-hotels-form" method="post">
+          <div class="search-hotels-form date-in">
+            <label for="date-in">Дата заезда:</label>
+            <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
+            <button class="button btn-date-in calendar">
+              <span class="visually-hidden">Календарь</span>
+              <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" /></svg>
+            </button>
+          </div>
+          <div class="search-hotels-form date-out">
+            <label for="date-out">Дата выезда:</label>
+            <input type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
+            <button class="button btn-date-out calendar">
+              <span class="visually-hidden">Календарь</span>
+              <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" /></svg>
+            </button>
+          </div>
+          <div class="search-hotels-form peoples">
+            <label for="peoples">Взрослые:</label>
+            <button class="button btn-peoples btn-minus">
+              <span class="visually-hidden">Уменьшить количество взрослых людей</span>
+              <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="7px">
+                <path d="M4 1 h10v3h-10z" />
+              </svg>
+            </button>
+            <input type="text" name="peoples" id="peoples" placeholder="2">
+            <button class="button btn-peoples btn-plus">
+              <span class="visually-hidden">Увеличить количество взрослых людей</span>
+              <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px">
+                <path d="M4 1 h3 v3 h3 v3 h-3 v3 h-3 v-3 h-3 v-3 h3 z" />
+              </svg>
+            </button>
+          </div>
+          <div class="search-hotels-form childrens">
+            <label for="childrens">Дети:</label>
+            <button class="button btn-childres btn-minus">
+              <span class="visually-hidden">Уменьшить количество детей</span>
+              <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="7px">
+                <path d="M4 1 h10v3h-10z" />
+              </svg>
+            </button>
+            <input type="text" name="childrens" id="childrens" placeholder="0">
+            <button class="button btn-childres btn-plus">
+              <span class="visually-hidden">Увеличить количество детей</span>
+              <svg fill="#a9a9a9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px">
+                <path d="M4 1 h3 v3 h3 v3 h-3 v3 h-3 v-3 h-3 v-3 h3 z" />
+              </svg>
+            </button>
+          </div>
+          <div class="button search-hotels-form search-button">
+            <input type="submit" name="search" id="search" value="Найти">
+          </div>
+        </form>
+      </div>
     </section>
     <section class="main-map">
       <h2 class="visually-hidden">Карта</h2>
@@ -172,27 +181,27 @@
   <footer class="main-footer">
     <div class="footer-wrapper">
       <a class="hash-tag" href="#">#visitsedona</a>
-        <ul class="footer-social-list">
-          <li>
-            <a class="social-button" href="#"><span class="visually-hidden">Мы в Twitter</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                <path fill="#fff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><span class="visually-hidden">Мы на Facebook</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                <path fill="#fff" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><span class="visually-hidden">Мы на YouTube</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                <path fill="#fff" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <ul class="footer-social-list">
+        <li>
+          <a class="social-button" href="#"><span class="visually-hidden">Мы в Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+              <path fill="#fff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" /></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><span class="visually-hidden">Мы на Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path fill="#fff" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><span class="visually-hidden">Мы на YouTube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+              <path fill="#fff" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
       <a class="producer" href="https://htmlacademy.ru/intensive/htmlcss">
         <p>Website by</p>
         <svg fill="#231f20" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41" viewBox="0 0 108.08 36.85">
@@ -203,7 +212,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.js">
+  <script src="js/script.min.js">
   </script>
 </body>
 
