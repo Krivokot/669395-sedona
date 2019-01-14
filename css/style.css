@@ -564,8 +564,9 @@ a {
   line-height: 26px;
   text-align: center;
   background-color: #ffffff;
-  margin-bottom: -406px;
-  padding: 41px 11px;
+  margin-bottom: -395px;
+  width: 569px;
+  padding: 41px 0px;
   -webkit-box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.15);
   display: none;
@@ -587,7 +588,7 @@ a {
   display: flex;
   -webkit-animation: smooth-appearance 0.3s;
   animation: smooth-appearance 0.3s;
-  margin-bottom: -407px;
+  margin-bottom: -398px;
 }
 
 .modal-error {
@@ -601,7 +602,7 @@ a {
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .search-hotels-form input[type="text"]::-webkit-input-placeholder {
@@ -629,7 +630,7 @@ a {
 }
 
 .date-in {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .date-out {
@@ -638,7 +639,8 @@ a {
 
 .date-in label,
 .date-out label {
-  margin-left: 43px;
+  margin-left: 37px;
+  margin-right: 3px;
   padding: 0px;
   cursor: pointer;
 }
@@ -649,7 +651,11 @@ a {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 14px;
-  margin-left: 20px;
+  margin-left: 16px;
+}
+
+.date-out input[type="text"] {
+  margin-left: 11px;
 }
 
 .calendar {
@@ -660,7 +666,7 @@ a {
   cursor: pointer;
   position: relative;
   left: -40px;
-  bottom: -5px;
+  bottom: -6px;
 }
 
 .calendar:hover svg,
@@ -678,37 +684,50 @@ a {
 .peoples,
 .childrens {
   display: inline-block;
-  vertical-align: center;
-  margin-top: 2px;
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.peoples {
+  margin-left: 0px;
+}
+
+.childrens {
+  margin-left: 45px;
 }
 
 .peoples label {
-  margin-right: 36px;
-  margin-left: 5px;
   padding: 0px;
   cursor: pointer;
+  margin-right: 35px;
 }
 
 .childrens label {
-  margin-left: 40px;
-  margin-right: 25px;
+  margin-right: 15px;
   padding: 0px;
   cursor: pointer;
 }
 
-.peoples input[type="text"],
+.peoples input[type="text"] {
+  width: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
 .childrens input[type="text"] {
   width: 40px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-align: center;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .btn-plus {
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 11px;
+  padding-left: 13px;
+  padding-right: 13px;
   margin: 0px;
   background-color: #f2f2f2;
   border: none;
@@ -718,13 +737,15 @@ a {
 }
 
 .btn-minus {
-  padding: 10px;
+  padding: 11px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0px;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
   position: relative;
-  left: 4px;
+  left: 3px;
 }
 
 .btn-minus:hover svg,
@@ -816,21 +837,29 @@ a {
 }
 
 .filter-infrastructure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   margin-top: 30px;
   margin-left: -7px;
+  width: 300px;
 }
 
 .filter-house-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 30px;
   margin-left: -296px;
+  width: 300px;
 }
 
 .filter-option {
@@ -1029,6 +1058,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-shrink: 0;
 }
 
 .main-catalog-sorting li {
@@ -1080,12 +1110,12 @@ a {
   fill: #81b3d2;
 }
 
-.sorting-options li:nth-child(4) {
-  margin-left: 539px;
+.sorting-options .sorting-down {
+  margin-left: -36px;
 }
 
-.sorting-options li:nth-child(5) {
-  margin-left: -24px;
+.sorting-options .sorting-up {
+  margin-left: 455px;
 }
 
 .main-catalog {
@@ -1168,8 +1198,15 @@ a {
   margin-bottom: 15px;
 }
 
+.hotel-type {
+  display: inline-block;
+  vertical-align: middle;
+  width: 113px;
+  margin-top: -1px;
+}
+
 .hotel-price {
-  margin-left: 30px;
+  margin-left: 0px;
   padding: 0px;
 }
 
@@ -1239,6 +1276,8 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
 }
 
 .hotel-stars li {
@@ -1307,7 +1346,7 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
-  margin-left: 24px;
+  margin-left: 254px;
   padding: 36px 0px 34px 0px;
 }
 
