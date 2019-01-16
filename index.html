@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <noscript>
     <style type="text/css">
       .modal-search-hotels {
@@ -21,24 +21,20 @@
 <body>
   <header class="main-header">
     <nav class="main-header-navigation">
-      <ul class="main-navigation-list-left">
+      <ul class="main-navigation-list">
         <li class="main-navigation-item"><a href="info.html">Информация</a></li>
         <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+        <li class="main-navigation-item"><a href="state.html">Карта штата</a></li>
+        <li class="main-navigation-item"><a href="catalog.html">Гостиницы</a></li>
       </ul>
       <a class="main-header-logo">
         <img src="img/logo-sedona.svg" alt="Логотип Седона" width="138" height="70">
       </a>
-      <ul class="main-navigation-list-right">
-        <li class="main-navigation-item"><a href="state.html">Карта штата</a></li>
-        <li class="main-navigation-item"><a href="catalog.html">Гостиницы</a></li>
-      </ul>
     </nav>
   </header>
   <main class="main-content">
     <div class="main-intro">
       <img src="img/intro-welcome.svg" alt="Интро: Welcome to the gorgeus Sedona Because the Grand Canyon sucks!" width="458" height="352">
-    </div>
-    <div class="intro-mask">
     </div>
     <p class="main-label">Седона &mdash; небольшой городок в Аризоне,<br>заслуживающий большего!</p>
     <p class="features-intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -111,7 +107,7 @@
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="searching-hotels.html" class="button btn-search-modal">Поиск гостиницы в Седоне</a>
-      <div class="modal-search-hotels">
+      <div class="modal-search-hotels" id="modal-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <form class="search-hotels-form" method="post">
           <div class="search-hotels-form date-in">
@@ -212,7 +208,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.min.js">
+  <script src="js/script.js">
   </script>
 </body>
 

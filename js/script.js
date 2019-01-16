@@ -1,7 +1,9 @@
+document.getElementById('modal-search').classList.add("modal-close");
+
 var link = document.querySelector(".btn-search-modal");
 var popup = document.querySelector(".modal-search-hotels");
 
-var form = document.querySelector(".search-hotels-form");
+var submit = document.querySelector(".search-button");
 var datein = document.querySelector("[name=date-in]");
 var dateout = document.querySelector("[name=date-out]");
 var childrens = document.querySelector("[name=childrens]");
@@ -14,7 +16,7 @@ link.addEventListener("click", function(evt) {
   popup.classList.remove("modal-error");
 });
 
-form.addEventListener("submit", function(evt) {
+submit.addEventListener("click", function(evt) {
     if (!datein.value || !dateout.value || !childrens.value || !peoples.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");

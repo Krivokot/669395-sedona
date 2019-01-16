@@ -6,24 +6,22 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="main-header-navigation">
-      <ul class="main-navigation-list-left">
-        <li class="main-navigation-item"><a href="info.html">Информация</a></li>
-        <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
-      </ul>
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo-sedona.svg" alt="Логотип Седона" width="138" height="70">
-      </a>
-      <ul class="main-navigation-list-right">
-        <li class="main-navigation-item"><a href="state.html">Карта штата</a></li>
-        <li class="main-navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
+      <nav class="main-header-navigation">
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item"><a href="info.html">Информация</a></li>
+          <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+          <li class="main-navigation-item"><a href="state.html">Карта штата</a></li>
+          <li class="main-navigation-item current"><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <a href="index.html" class="main-header-logo">
+          <img src="img/logo-sedona.svg" alt="Логотип Седона" width="138" height="70">
+        </a>
+      </nav>
   </header>
   <main class="main-content">
     <section class="main-filters">
@@ -100,21 +98,21 @@
         <li class="sorting-item">
           <a href="#" class="by-rating">По рейтингу</a>
         </li>
-        <li class="sorting-btn">
+      </ul>
+      <div class="sorting-btn">
           <a href="#" class="sorting-up">
             <span class="visually-hidden">Сортировка по убыванию</span>
             <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path d="M5.5 0L0 10h11z" /></svg>
           </a>
-        </li>
-        <li class="sorting-btn">
+      </div>
+      <div class="sorting-btn">
           <a href="#" class="sorting-down">
             <span class="visually-hidden">Сортировка по возрастанию</span>
             <svg fill="#cacaca" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path d="M5.5 10L0 0h11" /></svg>
           </a>
-        </li>
-      </ul>
+      </div>
     </section>
     <section class="main-catalog">
       <h1 class="visually-hidden">Каталог гостиниц в Седоне</h1>
