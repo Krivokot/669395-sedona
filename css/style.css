@@ -89,12 +89,12 @@ a {
 }
 
 .main-navigation-item {
-    width: 100px;
+  width: 100px;
 }
 
 .main-navigation-item:nth-child(2) {
-    margin-right: 235px;
-    margin-left: -10px;
+  margin-right: 235px;
+  margin-left: -10px;
 }
 
 .main-header-logo {
@@ -138,15 +138,15 @@ a {
 }
 
 .main-intro::before {
-    position: absolute;
-    content: "";
-    top: 506px;
-    left: 120px;
-     width: 1200px;
-     height: 59px;
-    background-image: url(../img/intro-mask.svg);
-     background-repeat: no-repeat;
-      background-position: center;
+  position: absolute;
+  content: "";
+  top: 506px;
+  left: 120px;
+  width: 1200px;
+  height: 59px;
+  background-image: url(../img/intro-mask.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-content {
@@ -578,7 +578,7 @@ a {
 }
 
 .modal-close {
-    display: none;
+  display: none;
 }
 
 .modal-show {
@@ -621,7 +621,7 @@ a {
 }
 
 .date-in input[type="text"]:focus,
- .date-out input[type="text"]:focus {
+.date-out input[type="text"]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline-style: none;
@@ -1041,6 +1041,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1070,8 +1071,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1114,7 +1121,7 @@ a {
 }
 
 .sorting-down {
-    margin-left: 11px;
+  margin-left: 11px;
 }
 
 .sorting-btn a {
