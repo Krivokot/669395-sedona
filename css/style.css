@@ -75,7 +75,7 @@ a {
   list-style: none;
   margin-left: 72px;
   padding: 0px;
-  width: 1076px;
+  width: 1055px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,16 +92,26 @@ a {
   width: 100px;
 }
 
+.main-navigation-item:nth-child(1),
 .main-navigation-item:nth-child(2) {
-  margin-right: 235px;
-  margin-left: -10px;
+  text-align: left;
+}
+
+.main-navigation-item:nth-child(3),
+.main-navigation-item:nth-child(4) {
+  text-align: right;
+}
+
+.main-navigation-item:nth-child(2) {
+  margin-right: 226px;
+  margin-left: -3px;
 }
 
 .main-header-logo {
   margin-top: 10px;
   padding: 0px;
   position: absolute;
-  left: 651px;
+  left: 644px;
   top: -10px;
 }
 
@@ -141,7 +151,7 @@ a {
   position: absolute;
   content: "";
   top: 506px;
-  left: 120px;
+  left: 113px;
   width: 1200px;
   height: 59px;
   background-image: url(../img/intro-mask.svg);
