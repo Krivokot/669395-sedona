@@ -513,7 +513,6 @@ a {
 }
 
 @-webkit-keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
@@ -539,7 +538,6 @@ a {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translateX(0);
@@ -896,7 +894,7 @@ a {
   padding-bottom: 26px;
 }
 
-.filter-option input[type="checkbox"]+.checkbox-indicator {
+.filter-option input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0px;
   left: -40px;
@@ -906,7 +904,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.filter-option input[type="checkbox"]:checked+.checkbox-indicator {
+.filter-option input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
   top: 0px;
   left: -40px;
@@ -1300,7 +1298,7 @@ a {
   width: 83px;
   margin-top: 38px;
   margin-left: 17px;
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 .hotel-stars {
